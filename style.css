@@ -1,0 +1,77 @@
+body {
+	overflow: hidden;
+}
+.popup {
+	border: 1px solid black;
+	background: white;
+	position: absolute;
+	top: 50px;
+	left: 37%;
+	top: 37%;
+	margin: 0;
+	animation-name: slide;
+	animation-duration: 2s;
+}
+.popup .draggy #close {
+	float: right;
+	background: red;
+	color: white;
+	width: 20px;
+	cursor: pointer;
+	text-align: center;
+	margin-top: .5px;
+	margin-right: .5px;
+	height: 16px;
+}
+.popup .draggy {
+	width: 100%;
+	height: 17px;
+	cursor: move;
+	user-select: none;
+	margin: 0;
+	border-bottom: 1px solid black;
+}
+#desktop {
+	background: lightgreen;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 98%;
+	width: 100%;
+}
+#contextmenu {
+	width: 100px;
+	height: 70px;
+	border: 1px solid black;
+	background: white;
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+	left: 0px;
+	display: none;
+}
+#apps {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 50px;
+	border-top: 1px solid black;
+	background: lightgrey;
+}
+#app {
+	width: 40px;
+	height: 40px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin-top: 4px;
+	background-size: cover;
+	cursor: pointer;
+}
+.texteditor {
+	background-image: url(assets/texteditor.png);
+}
+@keyframes slide {
+	from {}
+	to {}
+}

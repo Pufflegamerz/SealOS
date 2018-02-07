@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SealOS</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body onload="load()" oncontextmenu="contextmenu(); return false;" onmousemove="coords(event)">
+	<div id="contextmenu">
+		<span>New File</span>
+	</div>
+	<div id="desktop" onclick="document.getElementById('contextmenu').style.display = 'none';">
+	</div>
+	<div id="apps">
+		<center>
+			<div id="app" class="texteditor" onclick="app('texteditor')">
+				
+			</div>
+		</center>
+	</div>
+</body>
+</html>
